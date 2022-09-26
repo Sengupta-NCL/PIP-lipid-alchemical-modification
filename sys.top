@@ -1,0 +1,35 @@
+#include "../martini_v2.2.itp"
+#include "../martini_v2.0201506_lipids.itp"
+#include "../martini_v2.0_ions.itp"
+
+#define RUBBER_BANDS
+
+#include "Protein_1.itp"
+
+[ system ]
+; name
+INSANE! Membrane UpperLeaflet>POPC:POPE:DPSM:DPG1:DPG3:DPCE:CHOL=0.357:0.056:0.192:0.026:0.026:0.008:0.334 LowerLeaflet>POPC:POPE:DPSM:POPS:POPI:POP1:POP2:POP3:DPCE:CHOL=0.188:0.254:0.093:0.107:0.046:0.005:0.005:0.005:0.005:0.291
+
+[ molecules ]
+; name  number
+Protein          1
+POPC           543
+POPE            85
+DPSM           292
+DPG1            39
+DPG3            39
+DPCE            12
+CHOL           508
+POPC           286
+POPE           386
+DPSM           141
+POPS           162
+POPI            70
+POP1             7
+POP2             7
+POP3             7
+DPCE             7
+CHOL           443
+W              88042
+NA+               1797
+CL-               1382
